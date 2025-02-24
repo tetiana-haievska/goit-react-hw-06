@@ -30,6 +30,8 @@ export default function ContactForm() {
         placeholder="Name"
         required
       />
+      <input className={styles.input} type="text" value={number} onChange={e => setNumber(e.target.value)} placeholder="Phone" required/>
+      <button className={styles.button} type="submit">Add Contact</button>
     </form>
   );
 }
